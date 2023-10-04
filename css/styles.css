@@ -1,6 +1,8 @@
 /* Name: Drey V. | File Name:styles.css | Date: 9/26/2023 --> */
 /* Put reset rule here? */
 
+/* ROOT */
+
 :root {
     --global-color-1: #952ba8;
     
@@ -8,12 +10,24 @@
     --link-color-hover:rgb(0, 39, 234);
 }
 
+/* RESET STYLE */
+
+body, header, nav, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/* BODY STYLING */
 
 body {
     background:rgb(235, 235, 235);
     margin:0px;
     font-family: Arial, Verdana, sans-serif;
 }
+
+/* ANIMATED TRANSITIONS */
 
 a, img, div {
     transition-duration: 0.4s;
@@ -24,17 +38,46 @@ img {
     display:block;
 }
 
+img.img-center {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* NAV STYLING */
+
 nav {
     background:black;
     width:100%;
 }
 
+.top-nav-row {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.top-nav-column-brand {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.top-nav-column-options {
+    flex: 0 0 80%;
+    max-width: 80%;
+}
+
+a.top-nav-brand {
+    font-size: 2em;
+    font-weight: bold;
+}
+
 ul.top-nav-list {
     list-style-type: none;
     padding:2em;
+    margin:0px;
 }
 
 nav ul li {
+    font-size: 18px;
     display: inline-block;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -50,6 +93,8 @@ nav ul li a:hover {
     color:rgb(59, 147, 255);
 }
 
+/* LINK STYLING */
+
 a {
     text-decoration: none;
     color: var(--link-color);
@@ -59,10 +104,31 @@ a:hover {
     color: var(--link-color-hover);
 }
 
+/* MAIN STYLING */
+
+#main-image {
+    background-size:cover;
+    background-attachment: fixed;
+    background-image:url(https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80); 
+    height:400px
+}
+
 .content-section {
     padding:1em;
 }
 
+h1 {
+    text-align:center!important;
+}
+
+/* FOOTER STYLING */
 footer {
     width: 100% !important;
+}
+
+.footer-style {
+    padding:2em;
+    color:white;
+    line-height:1.7em;
+    font-size:15px;
 }
