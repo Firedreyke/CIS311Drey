@@ -43,6 +43,20 @@ img.img-center {
     margin-right:auto;
 }
 
+/* HEADER */
+
+.header-brand {
+    font-size: 2.75em;
+    font-weight: bold;
+}
+
+.header-brand-subtitle {
+    display: block;
+    font-size:.75em;
+    letter-spacing: 1px;
+    color:rgb(17, 8, 36);
+}
+
 /* NAV STYLING */
 
 nav {
@@ -50,29 +64,9 @@ nav {
     width:100%;
 }
 
-.top-nav-row {
-    display:flex;
-    flex-wrap: wrap;
-}
-
-.top-nav-column-brand {
-    flex: 0 0 20%;
-    max-width: 20%;
-}
-
-.top-nav-column-options {
-    flex: 0 0 80%;
-    max-width: 80%;
-}
-
-a.top-nav-brand {
-    font-size: 2em;
-    font-weight: bold;
-}
-
 ul.top-nav-list {
     list-style-type: none;
-    padding:2em;
+    padding:1.1em;
     margin:0px;
 }
 
