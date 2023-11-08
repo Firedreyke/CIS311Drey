@@ -261,7 +261,7 @@ footer {
         border:none;
     }
 
-    /* Increases the height of the main image */
+    /* Increases the height of the main image and adds black border to top */
     #main-image {
         height:400px;
         border-top: solid black 135px;
