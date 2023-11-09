@@ -41,12 +41,6 @@ body {
     font-family: Arial, Verdana, sans-serif;
 }
 
-/* ANIMATED TRANSITIONS */
-
-a, img, div {
-    transition-duration: 0.4s;
-}
-
 img {
     max-width:100%;
     display:block;
@@ -142,15 +136,22 @@ figcaption {
 
 /* GRID STYLING */
 
-.grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 20px;
- }
-
  .frame {
     position: relative;
-    max-width: 500px;
+    max-width: 440px;
+    margin: 2% auto;
+ }
+
+ .image-text {
+    position:absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    color:white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size:1.5em;
+    font-weight:bold;
  }
 
 /* MAIN STYLING */
@@ -199,6 +200,13 @@ footer {
 
 /* Tablet Viewport */
 @media screen and (min-width: 630px) {
+
+    /* ANIMATED TRANSITIONS */
+    a, img, div, figure, figcaption {
+        transition-duration: 0.4s;
+    }
+    
+    /* HEADER STYLING (Tablet) */
     header {
         position: -webkit-static;
         position: static;
@@ -225,6 +233,13 @@ footer {
     nav ul li:last-child {
         border-right:none;
     }
+
+    /* Styling the grid for tablet display */
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+     }
 
     /* Reduces the height of the main image as not to take up so much of the tablet screen */
     #main-image {
@@ -293,6 +308,16 @@ footer {
     /* Removes all borders from the main navigation */
     nav ul li {
         border:none;
+    }
+
+    /* Creates more interactivity with frames... lower opacity when not hovering, shadow and 100% opacity when hovering */
+    .frame {
+        opacity: 0.9;
+    }
+
+    .frame:hover {
+        opacity: 1;
+        box-shadow: 8px 8px 10px #808080;
     }
 
     /* Increases the height of the main image and adds black border to top */
