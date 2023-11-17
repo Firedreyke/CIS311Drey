@@ -36,11 +36,49 @@
         <div class="content-section" style="padding:1em;">
             <div id="contact-description">
                 <h1>Contact</h1>
-                Phone Number: Not given out
-                <br><br>
-                Email Address: <a href="mailto:ac.vogt@pack.csupueblo.edu">ac.vogt@pack.csupueblo.edu</a>
+                <div id="form">
+                    <h2>Form</h2>
+
+                    <form class="form-grid">
+                        <fieldset>
+                            <legend>Your Contact</legend>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" required>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Inquiry</legend>
+                            <label for="inq">Category</label>
+                            <select name="inq" id="inq">
+                                <option value="training">IT/IS Security Training</option>
+                                <option value="news">News Item Submission</option>
+                                <option value="press">Press Inquiry</option>
+                                <option value="general">Other/General</option>
+                            </select>
+                            <label for="inq-box">Content</label>
+                            <textarea id="inq-box" name="inq-box" rows="5" cols="35"></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Referral</legend>
+                            <label for="ref">Where did you hear aout DREYCYBER?</label>
+                            <select name="ref" id="ref">
+                                <option value="wom">Word of Mouth</option>
+                                <option value="search">Search Engine</option>
+                                <option value="social">Social Media</option>
+                                <option value="event">Event</option>
+                                <option value="other">Other</option>
+                            </select>
+
+                            <label for="questions">Questions?</label>
+                            <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+                        </fieldset>
+                        <input type="submit" id="submit" value="Submit" class="btn">
+                    </form>
+                </div>
                 <div id="map">
-                    <h4>Where I Graduated From</h4>
+                    <h2>Where I Graduated From</h2>
                     <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.7764593707907!2d-104.57839202283301!3d38.3078466812726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8713a3ee2ddd9b4f%3A0x1a76c6856daebb93!2sColorado%20State%20University%20Pueblo!5e0!3m2!1sen!2sus!4v1695778645592!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>

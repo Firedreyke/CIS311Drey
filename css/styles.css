@@ -189,6 +189,43 @@ h1 {
     height: 450px;
 }
 
+/* FORM STYLING */
+
+#form {
+    margin-top: 1%;
+    background-color: #f2f2f2;
+    padding: 1em;
+}
+
+#form h2 {
+    text-align: center;
+}
+
+fieldset, input, select, textarea {
+    margin-bottom: 1em;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+label {
+    display:block;
+    padding-top: 0.6em;
+    padding-bottom:0.2em;
+}
+
+form #submit {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 1.2em;
+    background-color: #b3b3b3;
+    font-size: 1em;
+    border-radius: 1em;
+}
+
 /* FOOTER STYLING */
 footer {
     width: 100% !important;
@@ -264,7 +301,7 @@ footer {
     }
 
     caption, th, td {
-        padding:1em;
+        padding:0.55em;
     }
 
     caption {
@@ -283,6 +320,12 @@ footer {
     th {
         background-color:black;
         color:white;
+    }
+
+    /* Form styling for tablet displays */
+    form {
+        width: 70%;
+        margin: 0 auto;
     }
 
     /* Reduces the height of the main image as not to take up so much of the tablet screen */
@@ -362,6 +405,26 @@ footer {
     .frame:hover {
         opacity: 1;
         box-shadow: 8px 8px 10px #808080;
+    }
+
+    /* Form styling for desktop displays */
+    form {
+        width: auto;
+    }
+
+    .form-grid {
+        display:grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+
+    .btn {
+        grid-column: 1 / span 3;
+    }
+
+    /* Increases padding of grid cells */
+    caption, th, td {
+        padding:1em;
     }
 
     /* Increases the height of the main image and adds black border to top */
