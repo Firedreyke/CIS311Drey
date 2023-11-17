@@ -226,6 +226,11 @@ form #submit {
     border-radius: 1em;
 }
 
+/* REMOVE MUSIC VIDEO BORDER */
+.music-video {
+    border:none;
+}
+
 /* FOOTER STYLING */
 footer {
     width: 100% !important;
@@ -335,6 +340,11 @@ footer {
         background-position:center right;
     }
 
+    /* Styling the monthly music video on tablet/desktop displays */
+    .music-video {
+        width:560px; 
+        height:315px; 
+    }
 
     /* Adding auto-resizing (responsiveness) to the map in the Contact page  */
     .contact-map {
