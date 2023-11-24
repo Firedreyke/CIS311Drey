@@ -112,6 +112,25 @@ nav ul li a:hover {
     color:rgb(59, 147, 255);
 }
 
+/* MOBILE (HAMBURGER) NAVIGATION STYLING */
+
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    text-decoration:none;
+    font-size: 18px;
+    display:block;
+    padding: 3%;
+}
+
+.mobile-nav a.mobile-menu-icon {
+    color:rgb(21, 21, 39);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 /* LINK STYLING */
 
 a {
@@ -245,11 +264,11 @@ footer {
 
 /* Displays mobile content by default, hides tablet/desktop-only content */
 
-.tablet-desktop {
+.tablet-desktop, #menu-links {
     display:none;
 }
 
-.mobile {
+.mobile, .mobile-nav {
     display:block;
 }
 

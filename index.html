@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="dc-brand">
         <div style="padding: 2em;">
             <a href="index.html">
                 <span class="header-brand"><span style="color:rgb(17, 8, 36)">DREY</span><span style="color:var(--link-color)">CYBER</span></span>
@@ -22,7 +22,20 @@
         </div>
     </header>
 
-    <nav>
+    <!-- MOBILE NAVIGATION MENU -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="about.html">About</a>
+            <a href="is.html">Information Security</a>
+            <a href="contact.html">Reach Out</a>
+        </div>
+        
+        <a class="mobile-menu-icon" onlick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+
+    <nav class="tablet-desktop">
         <ul class="top-nav-list">
             <li><a href="about.html">About</a></li>
             <li><a href="is.html">Information Security</a></li>
@@ -65,6 +78,9 @@
             <a href="mailto:ac.vogt@pack.csupueblo.edu">ac.vogt@pack.csupueblo.edu</a> &#9658; Header image by <a href="https://unsplash.com/@draufsicht">Andreas Gücklhorn</a> @ Unsplash
         </div>
     </footer>
+
+    <!-- JAVASCRIPT AREA -->
+    <script src ="scripts/script.js"></script>
 
 </body>
 </html>
