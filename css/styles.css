@@ -215,6 +215,7 @@ dt {
 }
 
 .content-section {
+    min-height:500px;
     padding:1em;
 }
 
@@ -340,6 +341,11 @@ footer .social {
         border-right:none;
     }
 
+    /* Styling content sections for bigger displays */
+    .content-section {
+        min-height:700px;
+    }
+
     /* Styling the grid for tablet display */
     .grid {
         display: grid;
@@ -381,6 +387,11 @@ footer .social {
     form {
         width: 70%;
         margin: 0 auto;
+    }
+
+    /* Styling the additional resources list for larger displays */
+    .resources-list {
+        max-width:50%;
     }
 
     /* Reduces the height of the main image as not to take up so much of the tablet screen */
