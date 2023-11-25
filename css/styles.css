@@ -114,8 +114,17 @@ nav ul li a:hover {
 
 /* MOBILE (HAMBURGER) NAVIGATION STYLING */
 
+#dc-brand {
+    z-index:2;
+}
+
 #menu-links {
     padding:1.5em;
+}
+
+.mobile-nav {
+    position:fixed;
+    z-index:3;
 }
 
 .mobile-nav a {
@@ -136,7 +145,7 @@ nav ul li a:hover {
 .mobile-nav a.mobile-menu-icon {
     color:rgb(21, 21, 39);
     display: block;
-    position: absolute;
+    position:fixed;
     right: 0;
     top: 0;
 }
