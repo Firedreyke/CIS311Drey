@@ -308,7 +308,7 @@ footer .social {
 @media screen and (min-width: 630px) {
 
     /* ANIMATED TRANSITIONS */
-    a, img, div, figure, figcaption {
+    a, img, div, figure, figcaption, nav ul li:hover {
         transition-duration: 0.4s;
     }
     
@@ -335,6 +335,10 @@ footer .social {
         display: inline-block;
         border-top:none;
         border-right: 2.5px solid rgb(33, 33, 37);
+    }
+
+    nav ul li:hover {
+        transform: scale(1.2);
     }
 
     nav ul li:last-child {
