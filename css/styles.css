@@ -266,10 +266,22 @@ footer {
 }
 
 .footer-style {
+    background:#000;
+    text-align:center;
     padding:2em;
     color:white;
     line-height:1.7em;
     font-size:15px;
+    min-height: 180px;
+}
+
+footer .social {
+    padding-top:5px;
+}
+
+.social img {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Displays mobile content by default, hides tablet/desktop-only content */
@@ -378,6 +390,19 @@ footer {
     /* Adding auto-resizing (responsiveness) to the map in the Contact page  */
     .contact-map {
         width:60%;
+    }
+
+    /* Footer adjustments for desktop/tablet */
+    footer .copyright {
+        padding: 2% 4%;
+        float: left;
+        width: 75%;
+    }
+    
+    footer .social {
+        float: right;
+        width: 20%;
+        padding: 2%;
     }
 
 }
