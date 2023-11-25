@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Name: Drey V. | File Name: index.html | Date: 11/24/2023 -->
+<!-- Name: Drey V. | File Name: index.html | Date: 9/25/2023 -->
 <html lang="en">
 <head>
     <!-- Appears as text on the tab. -->
@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="dc-brand">
         <div style="padding: 2em;">
             <a href="index.html">
                 <span class="header-brand"><span style="color:rgb(17, 8, 36)">DREY</span><span style="color:var(--link-color)">CYBER</span></span>
@@ -22,7 +22,21 @@
         </div>
     </header>
 
-    <nav>
+    <!-- MOBILE NAVIGATION MENU -->
+    <nav id="mobile-nav-menu" class="mobile-nav">
+        <div id="menu-links">
+            <a href="about.html">About</a>
+            <a href="is.html">Information Security</a>
+            <a href="contact.html">Reach Out</a>
+        </div>
+        
+        <a id="menu-icon" class="mobile-menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+
+    <!-- TABLET/DESKTOP NAVIGATION -->
+    <nav class="tablet-desktop">
         <ul class="top-nav-list">
             <li><a href="about.html">About</a></li>
             <li><a href="is.html">Information Security</a></li>
@@ -33,7 +47,7 @@
     <!-- Contains the primary content of the template page; the "main" content for the visitor to focus on. -->
     <main>
         <div class="tablet-desktop" id="main-image"></div>
-        <div class="content-section" style="text-align:center">
+        <div class="content-section" style="padding:1em; text-align:center">
             <figure>
                 <img class="rounded" src="images/drey-pic.jpg" alt="A picture of Drey against a gray background." width="500"> 
                 <figcaption>"Monitor, report, respond, adapt."</figcaption>
@@ -65,6 +79,9 @@
             <a href="mailto:ac.vogt@pack.csupueblo.edu">ac.vogt@pack.csupueblo.edu</a> &#9658; Header image by <a href="https://unsplash.com/@draufsicht">Andreas Gücklhorn</a> @ Unsplash
         </div>
     </footer>
+
+    <!-- JAVASCRIPT AREA -->
+    <script src ="scripts/script.js"></script>
 
 </body>
 </html>
